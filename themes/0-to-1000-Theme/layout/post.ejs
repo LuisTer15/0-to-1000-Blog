@@ -1,0 +1,18 @@
+<!-- Navbar -->
+<%- partial('_partial/navbar') %>
+
+<!-- head section -->
+<div class="row" id="head_post">
+    <div class="col-md-11 col-md-offset-1" id="post_title">
+        <h1><strong><%- page.title %></strong></h1>
+        <p><%= date(page.date, config.date_format) %></p>
+    </div>
+</div><!-- / head section -->
+<div class='row'>
+    <div class="col-sm-12 col-md-7 col-md-offset-1" id="post_wrapper">
+       <%- page.content %>
+    </div>
+</div>
+
+<!-- Footer -->
+<%- partial('_partial/footer') %>
