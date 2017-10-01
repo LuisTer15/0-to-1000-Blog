@@ -80,4 +80,4 @@ deploy:
   type: git
   repo: https://github.com/LuisTer15/0-to-1000-Blog.git
   branch: gh-pages
-  message: Arreglando los hipervinculos de los links
+  message: Agregando el recent-posts widget
