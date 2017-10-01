@@ -167,3 +167,17 @@ body {
 #recent_posts a:hover {
 	color: #006d63;
 }
+
+/* ARCHIVE PAGE */
+
+#archive_post h2 {
+	padding-top: 20px;
+}
+
+#archive_post a {
+	color: black;
+}
+
+#archive_post a:hover {
+	color: #006d63;
+}
