@@ -1,0 +1,20 @@
+<!-- Navbar -->
+<%- partial('_partial/navbar') %>
+
+<!-- head section -->
+<div class="row" id="head_post">
+    <div class="col-md-11 col-md-offset-1" id="post_title">
+        <h1><strong>Archives</strong></h1>
+    </div>
+</div><!-- / head section -->
+
+<div class="row">
+	<div class="col-md-11 col-md-offset-1" id="archive_post">
+		<% page.posts.each(function(item){ %>
+		<%- partial('_partial/article-archive', {item: item}) %>
+		<% }); %>
+	</div>
+</div>
+
+<!-- Footer -->
+<%- partial('_partial/footer') %>
