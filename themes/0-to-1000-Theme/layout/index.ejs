@@ -22,13 +22,11 @@
                     </a>
                 </h3>
                 <div class='text-muted'>
-                    <%= date(post.date, config.date_format) %> 
+                    <p><%= date(post.date, config.date_format) %></p> 
                 </div>
                 
                 <% if(post.content) { %>
-                    <p>
-                        <%- post.excerpt %>
-                    </p>
+                    <p><%- post.excerpt %></p>
                 <% } %>
 
                 <a href="<%- url_for(post.path) %>"><button class="btn btn-default btn-sm">Read more...</button></a>

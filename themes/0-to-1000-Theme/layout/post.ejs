@@ -12,6 +12,19 @@
     <div class="col-sm-12 col-md-7 col-md-offset-1" id="post_wrapper">
        <%- page.content %>
     </div>
+
+    <div class="col-md-3" id="recent_posts">
+    	<% if (site.posts.length){ %>
+    	    <h4><strong>Recent Posts</strong></h4>
+    	    <ul class="sidebar-module-list">
+    	      <% site.posts.sort('date', -1).limit(5).each(function(post){ %>
+    	        <li>
+    	          <a href="<%- url_for(post.path) %>"><%= post.title || '(no title)' %></a>
+    	        </li>
+    	      <% }) %>
+    	    </ul>
+    	<% } %>
+    </div>
 </div>
 
 <!-- Footer -->

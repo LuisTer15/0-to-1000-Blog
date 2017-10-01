@@ -151,4 +151,19 @@ body {
 	font-size: 40px;
 }
 
+#recent_posts {
+	padding: 30px;
+}
 
+#recent_posts li {
+	margin: 7px 0;
+	color: #006d63;
+}
+
+#recent_posts a {
+	color: darkgrey;
+}
+
+#recent_posts a:hover {
+	color: #006d63;
+}
