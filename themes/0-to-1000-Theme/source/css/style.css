@@ -170,6 +170,10 @@ body {
 
 /* ARCHIVE PAGE */
 
+#archive_post {
+	padding: 30px;
+}
+
 #archive_post h2 {
 	padding-top: 20px;
 }
